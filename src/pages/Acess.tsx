@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { Logo } from "../components/Logo";
 
+import myimage from "../assets/group-elements.png"
+
 const CREATE_SUBSCRIBER_MUTATION = gql`
   mutation CreateSubscriber($name: String!, $email: String!) {
     createSubscriber(data: { name: $name, email: $email }) {
@@ -34,12 +36,12 @@ export function Acess() {
   return (
     <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
       <div className="md:w-4/5 max-w-[1100px] flex lg:flex-row items-center justify-between mt-20 mx-auto flex-col w-3/4">
-        <div className="max-w-[640px] mr-14">
+        <div className="max-w-[640px] lg:mr-14">
           <div className="w-1/5">
             <Logo />
           </div>
 
-          <h1 className="mt-8 text-[2.5rem] leading-relaxed font-bold">
+          <h1 className="mt-8 text-[2.5rem] lg:leading-relaxed leading-10 font-bold">
             Increase your habilities studyng with us!
           </h1>
 
@@ -79,8 +81,8 @@ export function Acess() {
         </div>
       </div>
 
-      <div>
-        <img src="/src/assets/group-elements.png" className="mt-10" alt="" />
+      <div className="lg:mx-8 mx-12">
+        <img src={myimage} className="mt-10" alt="" />
       </div>
       <Footer />
     </div>

@@ -35,7 +35,7 @@ export function Navbar() {
           className={
             active
               ? "hidden"
-              : "block bg-gray-600 drop-shadow-[0_0_15px_rgb(254,34,72)] absolute z-50 top-20 right-12 p-8 rounded-xl"
+              : "block bg-gray-600 drop-shadow-[0_0_15px_rgb(254,34,72)] absolute z-50 top-20 mr-12 p-8 rounded-xl"
           }
         >
           <Nav />

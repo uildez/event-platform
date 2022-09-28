@@ -4,13 +4,12 @@ import { client } from "./lib/apollo";
 import { Router } from "./Router";
 
 function App() {
-
   return (
-    <ApolloProvider client={client}> 
+    <ApolloProvider client={client}>
       <BrowserRouter>
-      <Router/>
+        <Router />
       </BrowserRouter>
-    </ApolloProvider> 
+    </ApolloProvider>
   );
 }
 
