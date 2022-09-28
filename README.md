@@ -2,7 +2,7 @@
 Responsive video content platform developed with React, Tailwind CSS and GraphQL through GraphCMS and Apollo for consuming and storing application data.
 
 
-### Link to acess project: 
+### Link to acess project: https://event-platform-uildez.vercel.app/
 
 
 ### Prerequisites
